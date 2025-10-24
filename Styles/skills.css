@@ -1,0 +1,42 @@
+.skills-section-container {
+    margin: 1rem 5%;
+    min-height: 200px;
+    /* padding: 0rem 0rem 7rem; */
+    justify-content: flex-start;
+    width: 90vw;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100;
+    margin: 1rem;
+    position: relative;
+    top: 0rem;
+    left: 1rem;
+}
+
+.skills-container > div {
+    background: var(--color600);
+    min-height: 40px;
+    width: 7rem;
+    border: transparent;
+    border-radius: 1rem;
+}
+
+.skills-container img {
+    height: 3rem;
+    margin: .5rem;
+    padding: 0;
+}
+
+.skills-container p {
+    margin: 0rem 0rem .5rem;
+}
+
+.skills-header-section {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}    

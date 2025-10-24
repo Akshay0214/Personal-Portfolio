@@ -1,0 +1,32 @@
+h6 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+p{
+    font-size: 2rem;
+    color: var(--color400);
+    margin-top: -2rem;
+    
+}
+
+div {
+    background-color: var(--color600);
+    height: 90vh;
+    width: 90vw;
+    margin: 2rem 5%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+button {
+    background-color: rgb(65, 124, 177);
+}
+
+button:hover {
+    background-color: rgb(29, 120, 212);
+}
