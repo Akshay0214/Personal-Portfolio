@@ -1,85 +1,65 @@
 .hero {
-    background-image: url('../Images/hero-bg.jpg');
-    background-size: cover;
-    height: 96vh;
-    width: 90vw;
-    margin: 1rem 5% 2rem 5%;
-    box-shadow: 0px 0px 15px var(--accent-clr2);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    /* border-radius: var(--radius-20); */
 }
+
 
 .hero-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    height: 100%;
-    align-items: center;
-    align-content: center;
-
+    padding-block: 150px 50px;
+    margin-inline: 20px;
 }
 
-.hero-container-left {
+.hero-container .hero-desc {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 90%;
-    
+    gap: 20px;
 }
 
-.hero-container-left > div {
-    margin: 1rem 5rem;
-}
-
-.hero-container-left h1{
-    font-size: 3.5rem;
-    color: var(--main-color);
-    text-wrap: nowrap;
-}
-
-.hero-container-left h2{
-    font-size: 1.5rem;
-    margin: 0rem 0rem 1rem 0rem;
-    color: var(--text-clr200);
-}
-
-.hero-container-left p{
-    font-size: 1rem;
-    color: var(--text-clr);
-}
-
-.hero-social-links img{
-    height: 2.5rem;
-    margin-right: 2rem;
-}
-
-.hero-container-left button {
-    margin: 0rem 1rem 0rem 0rem;
-}
-
-.hero-container-left button:hover {
-    box-shadow: 0 0 10px var(--accent-clr);
-}
-
-.hero-container-right {
+.hero-desc .hero-text {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.hero-container-right img {
-    height: 35em;
+.hero-desc .hero-text h2{
+    margin-block-start: -15px;
+    color: var(--text-granite-gray);
+    font-size: var(--fontSize-3);
 }
 
-#contact-me-btn {
-    background-color: var(--accent-clr);
-    color: var(--color100);
+.hero-text p {
+    color: var(--text-granite-gray);
 }
 
-#contact-me-btn:hover{
-    box-shadow: 0 0 15px var(--color400);
+.hero-text #my-branch {
+    color: var(--accent-teal-dark);
 }
 
-#my-branch {
-    color: var(--accent-clr2);
+.hero-social-links-container .social-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links img {
+    max-height: 50px;
+    height: 40px;
+}
+
+.hero-btn-container button{
+    margin-right: 1rem;
+}
+
+.hero-banner-container{
+    height: auto;
+    width: 100%;
+    /* order: -1; */
+    display: none;
+}
+
+.hero-banner-container .banner-container,
+.banner-container img{
+    width: 100%;
+    height: auto;
+    margin-inline: auto;
 }

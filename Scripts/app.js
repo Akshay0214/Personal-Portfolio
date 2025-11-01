@@ -19,7 +19,7 @@ async function loadSkill(){
         const imageURL = `./Images/skill-icons/${noOfIcons[i]}.svg`;
         const card = document.createElement('div');
         card.classList.add("flex-box-ver");
-        card.classList.add("card");
+        card.classList.add("skill-card");
         card.innerHTML = `<div><img loading="lazy" src="${imageURL}" alt="icon"></div><p>${noOfIcons[i]}</p>`;
         skillCard[0].appendChild(card);
     } 

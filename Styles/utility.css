@@ -1,3 +1,91 @@
+:root {
+    --bg-light-gray: #F4F4F4;
+    --bg-lighter: #FAFAFA;
+    --bg-gray:#666;
+    --primary-charcoal: #2E2E2E;
+    --secondary-white: #FFFFFF;
+    --accent-teal: #2A9D8F;
+    --accent-teal-light: #c2ece7;
+    --accent-teal-dark: #1F7A6E;
+    --text-gray: #6B7280;
+
+
+    /*text color*/
+    --text-white: hsl(0, 0%, 100%);
+    --text-gunmetal: hsl(209, 40%, 14%);
+    --text-light-coral: hsl(357, 96%, 73%);
+    --text-granite-gray: hsl(210, 4%, 38%);
+    --text-majorelle-blue: hsl(249, 95%, 63%);
+    --text-sunglow: hsl(48, 100%, 50%);
+
+
+
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fontSize-1: 2rem;
+    --fontSize-2: 1.75rem;
+    --fontSize-3: 1.5rem;
+    --fontSize-4: 1.25rem;
+    --fontSize-5: 1.125rem;
+    --fontSize-6: 1rem;
+    --fontSize-7: 0.875rem;
+
+    --weight-bold: 700;
+    --weight-semiBold: 600;
+    --weight-medium: 500;
+
+
+    --section-spacing: 80px;
+
+
+
+
+    /* Soft elevation for subtle UI elements */
+    --shadow-1: 0 2px 10px hsla(174, 34%, 35%, 0.08);
+
+    /* Medium elevation for cards and buttons */
+    --shadow-2: 0 5px 10px hsla(174, 34%, 40%, 0.12);
+
+    /* Stronger elevation for modals and popups */
+    --shadow-3: 0 5px 10px hsla(0, 0%, 18%, 0.15);
+
+    /* Deep elevation for overlays and dropdowns */
+    --shadow-4: 0 30px 50px hsla(0, 0%, 18%, 0.20);
+    /* For teal-themed interactive elements (buttons, links) */
+    --shadow-interactive: 0 4px 12px hsla(174, 34%, 40%, 0.16);
+
+    /* For cards on --bg-lighter */
+    --shadow-card: 0 2px 8px hsla(0, 0%, 18%, 0.06);
+
+    /* Hover state - slightly elevated */
+    --shadow-hover: 0 8px 16px hsla(174, 34%, 35%, 0.14);
+
+
+
+
+    
+    --radius-pill: 200px;
+    --radius-circle: 50%;
+    --radius-30: 30px;
+    --radius-20: 20px;
+    --radius-16: 16px;
+    --radius-12: 12px;
+    --radius-8: 8px;
+    --radius-6: 6px;
+    --radius-4: 4px;
+    --radius-none: 0;
+
+
+    --transition-fast: 150ms cubic-bezier(0, 0, 0.2, 1);
+    /* Hover states */
+    --transition-base: 250ms cubic-bezier(0, 0, 0.2, 1);
+    /* Default interactions */
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* Smooth state changes */
+    --transition-bounce: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Accent elements */
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,120 +94,92 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
+    scrollbar-width: none;
+    font-family: var(--ff-poppins);
 }
-
-:root {
-    --main-color: #000000;
-    --color700: #212121;
-    --color600: #303030;
-    --color500: #424242;
-    --color400: #505050;
-    --color300: #e3dbcc;
-    --color200: #f3f0f9;
-    --color100: #fdfcf8;
-    --text-clr: #767676;
-    --text-clr200: #525279;
-    --accent-clr: #a855a7;
-    --accent-clr2: #6a2a97;
-}
-
-/* .light-mode {
-    --main-color: #ffffff;
-    --color700: #dddddd;
-    --color600: #cccccc;
-    --color500: #aaaaaa;
-    --color400: #999999;
-    --color300: #eeeeee;
-    --color200: #f3f0f9;
-    --color100: #fdfcf8;
-    --text-clr: #767676;
-    --text-clr200: #525279;
-    --accent-clr: #a855a7;
-    --accent-clr2: #6a2a97;
-    color: #121212;
-} */
 
 body {
-    background: var(--main-color);
-    color: var(--color200);
-    font-family: 'Poppins', sans-serif;
-    z-index: -1;
-    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: auto;
+    margin-inline: auto;
+    background: var(--bg-light-gray);
 }
 
-body a {
-    text-decoration: none;
-    color: var(--color200);
-}
-
-body li {
-    list-style: none;
-}
-
-body img {
+img {
     height: 100px;
 }
 
-button {
-    padding: 1rem 2rem;
-    border: transparent;
-    border-radius: 1rem;
-    background-color: var(--color300);
-    box-shadow: 0px 0px 5px var(--accent-clr);
+input,
+textarea {
+    border: none;
+    outline: none;
 }
 
-button:hover {
-    background-color: var(--color200);
-    box-shadow: 0px 0px 10px var(--color200);
+a {
+    text-decoration: none;
+    color: var(--text-white);
 }
 
-.flex-box-hor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+li {
+    list-style: none;
+    text-decoration: none;
 }
 
-.flex-box-ver {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+section {
+    /* padding-block: var(--section-spacing); */
 }
 
-.scrolled {
-    backdrop-filter: blur(1rem);
-    transition: background 300ms ease-in;
-    border: transparent;
-    backdrop-filter: blur(10rem);
-    /* background-color: var(--color500); */
+.h1 {
+    font-size: var(--fontSize-1);
+    font-weight: var(--weight-bold);
+    line-height: 2rem;
+    letter-spacing: -0.03em;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-
+.h2 {
+    font-size: var(--fontSize-2);
+    font-weight: var(--weight-semiBold);
+    line-height: 1.2rem;
 }
 
-.card {
-    border: transparent;
-    border-radius: 1rem;
-    background: var(--color700);
-    box-shadow: 0rem 0rem 5px var(--accent-clr2);
+.h3 {
+    font-size: var(--fontSize-3);
+    font-weight: var(--weight-bold);
 }
 
-.hr-rule {
-    border: transparent;
-    height: .2rem;
-    width: 100%;
-    background: var(--color300);
+
+
+
+
+
+
+
+.btn-primary {
+    padding: 15px 25px;
+    background: var(--accent-teal);
+    color: var(--secondary-white);
+    border-radius: var(--radius-pill);
+    width: fit-content;
+    border: none;
+    box-shadow: var(--shadow-interactive);
+    cursor: pointer;
 }
 
-html::-webkit-scrollbar {
-    display: none;
+.btn-secondary {
+    padding: 15px 25px;
+    background: var(--secondary-white);
+    border-radius: var(--radius-pill);
+    width: fit-content;
+    border: 1px solid var(--accent-teal);
+    box-shadow: var(--shadow-interactive);
+    cursor: pointer;
 }
 
-html {
-    scrollbar-width: none;
+.title {
+    font-size: var(--fontSize-3);
+    font-weight: var(--weight-bold);
+    margin-block: 20px 30px;
+    text-align: center;
 }
