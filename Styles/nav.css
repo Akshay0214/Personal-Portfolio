@@ -1,79 +1,130 @@
-.nav-container {
-    justify-content: space-between;
-    padding: 3rem 7% 2rem;
-    z-index: 10;
-    position:fixed;
-    top: 1rem;
-    left: 7%;
-    right: 7%;
-    align-items: center;
-}
-
-.nav-left div{
-    text-align: center;
-}
-
-.nav-left h2 {
-    font-size: 2rem;
-    color: var(--main-color);
-}
-
-.nav-left span {
-    color: var(--text-clr200);
-}
-
-.nav-mid li {
-    padding: 1rem 2rem;
-}
-
-.nav-mid a{
-    color: var(--main-color);
-}
-
-.nav-right{
+.nav-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    justify-content: space-between;
+    padding-inline: 20px;
+    padding-block: 20px;
+    background-color: var(--secondary-white);
+    box-shadow: var(--shadow-1);
+    z-index: 100;
 }
 
-.nav-right button {
-    background-color: var(--accent-clr);
-    color: var(--color100);
+.nav-action-links {
+    height: 600px;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* z-index: 100; */
+    position: absolute;
+    top: 0;
+    right: -450px;
+    background-color: inherit;
+    transition: var(--transition-slow);
+    margin-block: 60px;
 }
 
-.nav-right img {
-    height: 2.5rem;
-    background: var(--color100);
-    margin: 1rem;
-    border-radius: 1.2rem;
+.nav-action-links.active{
+    transform: translateX(-450px);
+    transition: var(--transition-slow);
 }
 
-.nav-right button:hover {
-    background-color: var(--accent-clr2);
-    color: var(--color200);
+.nav-links {
+    margin-block:60px 20px;
+    margin-inline: 20px;
 }
 
-.scrolled {
-    padding: 1rem 7%;
-    border-radius: 3rem;
-    background-color: var(--accent-clr);
+.nav-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.scrolled h2 {
-    color: var(--color100);
+.nav-links li{
+    position: relative;
 }
 
-.scrolled a{
-    color: var(--color100);
+.nav-links ul > li:is(:hover, :focus-visible){
+    transform:translateX(5px);
+    transition: var(--transition-fast);
 }
 
-.scrolled button {
-    color: var(--main-color);
-    background-color: var(--color100);
+.nav-links ul>li:is(:hover, :focus-visible) .link-active-indicator {
+    display: block;
+    animation: fill-up 150ms ease-in;
+    transition: var(--transition-fast);
 }
 
-.scrolled span {
-    color: var(--color300);
+@keyframes fill-up {
+    0%{
+        height: 0%;
+        width: 0%;
+    }
+    100%{
+        height: 100%;
+        width: 2px;
+    }
+}
+
+.nav-links a{
+    color: var(--text-gunmetal);
+    font-size: var(--fontSize-4);
+    text-wrap: nowrap;
+}
+
+.nav-links .link-active-indicator {
+    background: var(--accent-teal-dark);
+    width: 3px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    display: none;
 }
 
 
+.nav-btn {
+    margin-block: 60px;
+    margin-inline: 20px;
+}
+
+
+
+
+
+.toggle-btn {
+    cursor: pointer;
+    height: 40px;
+}
+
+.toggle-btn img {
+    display: none;
+    height: 100%;
+}
+
+.toggle-btn img.active{
+    display: block;
+    animation: changingBtn 200ms;
+}
+@keyframes changingBtn {
+    0%{
+        height: 0%;
+    }
+    100%{
+       height: 100%;
+    }
+}
+
+
+.logo{
+    font-size: var(--fontSize-6);
+}
+
+.logo span{
+    color: var(--accent-teal);
+}
