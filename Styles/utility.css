@@ -167,6 +167,11 @@ section {
     cursor: pointer;
 }
 
+.btn-primary:is(:hover, :focus-visible){
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-4);
+}
+
 .btn-secondary {
     padding: 15px 25px;
     background: var(--secondary-white);
@@ -175,6 +180,12 @@ section {
     border: 1px solid var(--accent-teal);
     box-shadow: var(--shadow-interactive);
     cursor: pointer;
+}
+
+.btn-secondary:is(:hover, :focus-visible) {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-3);
+    background-color: var(--accent-teal);
 }
 
 .title {

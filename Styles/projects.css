@@ -4,9 +4,9 @@
     /* gap: 30px; */
 }
 
-.project-section-container .project-header {
+/* .project-section-container .project-header {
 
-}
+} */
 
 .projects-container {
     display: grid;
@@ -26,6 +26,11 @@
     perspective: 1000px;
     margin-inline: auto;
     max-width: 1200px;
+}
+
+.project-card:is(:hover, :focus-visible){
+    transform: translateY(-7px);
+    scale: 1.01;
 }
 
 .pro-img-container {
@@ -67,9 +72,9 @@
     margin-block-end: 20px;
 }
 
-.pro-desc .pro-btns {
+/* .pro-desc .pro-btns {
 
-}
+} */
 
 .pro-btns button{
     margin-inline: 0px 15px;

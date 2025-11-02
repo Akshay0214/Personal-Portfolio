@@ -1,6 +1,17 @@
 .skills-section{
     margin: 0px;
     padding: 0px;
+    animation: fadein 200ms ease-in forwards;
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }
 
 .skills-section .skills-section-container{
@@ -38,6 +49,13 @@
     align-items: center;
     justify-content: center;
     padding-block: 10px;
+}
+
+.skill-card:is(:hover, :focus-visible){
+    background-color: var(--secondary-white);
+    border: 2px solid var(--accent-teal);
+    transform: translate3d(0px, -5px, 10px);
+    scale: 1.2;
 }
 
 .skill-card > div {

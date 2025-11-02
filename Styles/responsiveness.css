@@ -85,6 +85,21 @@
         font-size: var(--fontSize-5);
     }
 
+    .nav-links ul>li:is(:hover, :focus-visible) {
+        transform: translateY(-5px);
+        transition: var(--transition-fast);
+        text-decoration: underline var(--accent-teal);
+        scale: 1.1;
+        box-shadow: var(--shadow-2);
+    }
+
+
+    .nav-links ul>li:is(:hover, :focus-visible) .link-active-indicator {
+        display: none;
+        /* animation: fill-up 150ms ease-in;
+                    transition: var(--transition-slow); */
+    }
+
 
 
 
@@ -143,10 +158,11 @@
 
 
 
-    .contact-form-section .title{
+    .contact-form-section .title {
         margin-block: 0;
         padding-block: 30px;
     }
+
     .contact-form-container {
         margin-inline: auto;
         margin-block: 20px;

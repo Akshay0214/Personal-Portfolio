@@ -2,7 +2,6 @@
     background-color: var(--secondary-white);
     display: flex;
     flex-direction: column;
-    /* gap: 30px; */
 }
 
 .contact-form-container{
@@ -65,7 +64,12 @@ textarea {
 
 input:focus, textarea:focus {
     background: var(--secondary-white);
-    border-color: var(--text-gray);
+    border-color: var(--accent-teal-light);
+    border: 2px solid;
+}
+
+input:not(:placeholder-shown){
+    border: 2px solid;
 }
 
 textarea:is(:focus-within){
@@ -81,5 +85,5 @@ input:not(:placeholder-shown):invalid {
 }
 
 input:focus:invalid {
-    border-color: #8a2be2;
+    border-color: var(--accent-teal-light);
 }
