@@ -114,7 +114,7 @@
 
 
     .skills-section .skills-section-container {
-        padding-block: 50px;
+        /* padding-block: 50px; */
     }
 
     .skills-container {
@@ -126,7 +126,7 @@
 
     .project-card {
         grid-template-columns: 1fr 1fr;
-        margin-inline: 15%;
+        margin-inline: auto;
         height: 500px;
         gap: 0;
     }
@@ -143,15 +143,19 @@
 
 
 
-
+    .contact-form-section .title{
+        margin-block: 0;
+        padding-block: 30px;
+    }
     .contact-form-container {
-        margin-inline: 15%;
+        margin-inline: auto;
         margin-block: 20px;
-        padding-block: 100px;
+        padding-block: 50px;
     }
 
     .form-input-elements>div {
         width: 500px;
+        margin: 0px 30px;
     }
 
     .form-input-elements #contact-form-submit-btn {

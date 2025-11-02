@@ -180,6 +180,6 @@ section {
 .title {
     font-size: var(--fontSize-3);
     font-weight: var(--weight-bold);
-    margin-block: 20px 30px;
+    margin-block: 30px;
     text-align: center;
 }

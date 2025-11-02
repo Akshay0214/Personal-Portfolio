@@ -1,7 +1,7 @@
 .project-section-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .project-section-container .project-header {
@@ -10,6 +10,7 @@
 
 .projects-container {
     display: grid;
+    margin-block: 30px;
 }
 
 .project-card {
@@ -19,10 +20,12 @@
     gap: 10px;
     background: var(--secondary-white);
     border-radius: var(--radius-20);
-    margin: 2%;
+    /* margin: 2%; */
     padding: 15px 10px;
 
     perspective: 1000px;
+    margin-inline: auto;
+    max-width: 1200px;
 }
 
 .pro-img-container {
