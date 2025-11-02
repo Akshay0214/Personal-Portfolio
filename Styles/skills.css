@@ -1,9 +1,14 @@
+.skills-section{
+    margin: 0px;
+    padding: 0px;
+}
+
 .skills-section .skills-section-container{
     display: flex;
     flex-direction: column;
     margin-inline: auto;
     background-color: var(--secondary-white);
-    padding-block: 25px;
+    /* gap: 30px; */
 }
 
 .skills-header-section{
@@ -14,8 +19,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 30px;
+    gap: 20px;
     margin: auto;
+    margin-block: 30px;
 }
 
 .skills-section-container .title {
