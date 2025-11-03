@@ -49,6 +49,7 @@
     align-items: center;
     justify-content: center;
     padding-block: 10px;
+    box-shadow: var(--shadow-4);
 }
 
 .skill-card:is(:hover, :focus-visible){
