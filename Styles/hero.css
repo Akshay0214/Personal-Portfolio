@@ -46,6 +46,11 @@
     height: 40px;
 }
 
+.social-links img:is(:hover, :focus-visible){
+    transform: translate3d(1px, -4px, 5px);
+    scale: 1.1;
+}
+
 .hero-btn-container button{
     margin-right: 1rem;
 }
@@ -60,6 +65,7 @@
 .hero-banner-container .banner-container,
 .banner-container img{
     width: 100%;
+    max-width: 400px;
     height: auto;
     margin-inline: auto;
 }

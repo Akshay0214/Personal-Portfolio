@@ -127,9 +127,7 @@ li {
     text-decoration: none;
 }
 
-section {
-    /* padding-block: var(--section-spacing); */
-}
+
 
 .h1 {
     font-size: var(--fontSize-1);
@@ -165,6 +163,12 @@ section {
     border: none;
     box-shadow: var(--shadow-interactive);
     cursor: pointer;
+    font-size: var(--fontSize-7);
+}
+
+.btn-primary:is(:hover, :focus-visible){
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-4);
 }
 
 .btn-secondary {
@@ -175,6 +179,18 @@ section {
     border: 1px solid var(--accent-teal);
     box-shadow: var(--shadow-interactive);
     cursor: pointer;
+    font-size: var(--fontSize-7);
+}
+
+.btn-secondary:is(:hover, :focus-visible) {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-3);
+    background-color: var(--accent-teal);
+}
+
+.btn-primary:is(:active),
+.btn-secondary:is(:active){
+    transform: translateY(0);
 }
 
 .title {

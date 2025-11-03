@@ -123,6 +123,7 @@
 
 .logo{
     font-size: var(--fontSize-6);
+    text-shadow: var(--shadow-4);
 }
 
 .logo span{
